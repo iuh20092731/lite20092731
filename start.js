@@ -8,7 +8,7 @@ app.use(express.json());
 app.get("/api20092731/books", async (req, res) => {
   console.info(`Getting all books`);
 
-  const books = await query("SELECT * FROM tblbook");
+  const books = await query("SELECT * FROM tblbookIUH20092731");
   res.json(books);
 });
 
